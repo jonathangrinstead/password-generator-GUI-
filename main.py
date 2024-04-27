@@ -17,7 +17,9 @@ while True:
 
     name = values[0]
 
-    reply = 'Hello {name} !'
+    print(name)
+
+    reply = f"Hello {name} !"
 
     if event == 'Ok':
         window['reply'].update(reply)
