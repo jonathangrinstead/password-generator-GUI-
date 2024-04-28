@@ -32,7 +32,7 @@ while True:
         # Copy the currently displayed password to the clipboard
         current_password = window['-OUTPUT-'].get()
         pyperclip.copy(current_password)
-        sg.popup('Password copied to clipboard!')
+        sg.popup('Password copied to clipboard!', title='Success',font=('Calibri'), auto_close=True, auto_close_duration=3, button_justification='center')
 
     # if user closes window or clicks cancel
     if event == sg.WIN_CLOSED or event == 'Cancel':
