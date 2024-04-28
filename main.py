@@ -3,7 +3,7 @@ import string
 import secrets
 import pyperclip
 
-sg.theme('BluePurple')
+sg.theme('BlueMono')
 
 def password_generator(length=12):
     alphabet = string.ascii_letters + string.digits + string.punctuation
@@ -11,10 +11,10 @@ def password_generator(length=12):
     return password
 
 # All the stuff in the window.
-layout = [[ sg.Push(),sg.Text('Generate a Password'), sg.Push()],
-            [ sg.Push(), sg.Button('Generate', key='Generate'), sg.Push()],
-            [sg.Push(),sg.Push(),sg.Text('', size=(30, 1), key='-OUTPUT-'),sg.Push()], 
-            [sg.Push(),sg.Button('Copy to Clipboard', key='Copy'),sg.Push()]]
+layout = [[ sg.Push(),sg.Text('Generate a Password',font=("Calibri", 16)), sg.Push()],
+            [ sg.Push(), sg.Button('Generate', key='Generate', font=("Calibri")), sg.Push()],
+            [sg.Push(),sg.Text('', font=("Calibri", 16), key='-OUTPUT-'),sg.Push()], 
+            [sg.Push(),sg.Button('Copy to Clipboard', key='Copy',font=("Calibri")),sg.Push()]]
 
 # Create the Window
 window = sg.Window('Password Generator', layout,size=(300,150 ))
