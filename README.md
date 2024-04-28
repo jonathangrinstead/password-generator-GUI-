@@ -10,6 +10,6 @@ This action simultaneously triggers a popup window to confirm that the password 
 
 # 🌄 Screenshots
 
-![Generator Screenshot](Password-Generator.png "Password Generator")
+![Generator Screenshot](Password-Genrator.png "Password Generator")
 
 ![Popup Screenshot](Password-Popup.png "Popup Generator")
